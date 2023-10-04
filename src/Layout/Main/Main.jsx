@@ -3,7 +3,6 @@ import Header from '../../Pages/Shared/Header/Header'
 import Footer from '../../Pages/Shared/Footer/Footer'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import moment from 'moment';
 import Col from 'react-bootstrap/Col';
 import LeftNavbar from '../../Pages/Shared/Left Navbar/LeftNavbar';
 import RightNavBar from '../../Pages/Shared/Right Navbar/RightNavBar';
@@ -17,7 +16,7 @@ const Main = () => {
                     <Col>
                         <LeftNavbar></LeftNavbar>
                     </Col>
-                    <Col xs={6}>{moment().format()}</Col>
+                    <Col xs={6}>Main is comming soon...</Col>
                     <Col>
                         <RightNavBar></RightNavBar>
                     </Col>
