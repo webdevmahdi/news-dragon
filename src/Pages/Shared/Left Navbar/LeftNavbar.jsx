@@ -10,7 +10,6 @@ const LeftNavbar = () => {
     .then(data => setCatagories(data))
     .catch(err => console.log(err));
   } ,[])
-  console.log(catagories)
   return (
     <div>
       <h3>All catagories</h3>
