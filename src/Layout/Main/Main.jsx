@@ -1,6 +1,6 @@
-import React from 'react'
-import Header from '../../Pages/Shared/Header/Header'
-import Footer from '../../Pages/Shared/Footer/Footer'
+import React from 'react';
+import Header from '../../Pages/Shared/Header/Header';
+import Footer from '../../Pages/Shared/Footer/Footer';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -24,7 +24,7 @@ const Main = () => {
             </Container>
             <Footer></Footer>
         </div>
-    )
-}
+    );
+};
 
-export default Main
+export default Main;

@@ -1,8 +1,8 @@
-import React from 'react'
-import { Button, ListGroup } from 'react-bootstrap'
-import { FaGoogle, FaGithub, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
-import QZone from '../QZone/QZone'
-import bg from '../../../assets/bg.png'
+import React from 'react';
+import { Button, ListGroup } from 'react-bootstrap';
+import { FaGoogle, FaGithub, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import QZone from '../QZone/QZone';
+import bg from '../../../assets/bg.png';
 
 const RightNavBar = () => {
   return (
@@ -25,7 +25,7 @@ const RightNavBar = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta tenetur impedit rem dolores dignissimos incidunt iure cumque, quis maxime eius.</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default RightNavBar
+export default RightNavBar;

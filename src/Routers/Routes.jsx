@@ -13,6 +13,6 @@ let router = createBrowserRouter([
             }
         ]
     }
-])
+]);
 
 export default router;

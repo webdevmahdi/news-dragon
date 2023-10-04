@@ -1,6 +1,6 @@
-import React from 'react'
-import logo from '../../../assets/logo.png'
-import moment from 'moment'
+import React from 'react';
+import logo from '../../../assets/logo.png';
+import moment from 'moment';
 import Marquee from "react-fast-marquee";
 import Button from 'react-bootstrap/Button';
 import { Container, Nav, Navbar } from 'react-bootstrap';
@@ -36,7 +36,7 @@ const Header = () => {
     </Navbar>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const LeftNavbar = () => {
@@ -9,7 +9,7 @@ const LeftNavbar = () => {
     .then(res => res.json())
     .then(data => setCatagories(data))
     .catch(err => console.log(err));
-  } ,[])
+  } ,[]);
   return (
     <div>
       <h3>All catagories</h3>
@@ -21,7 +21,7 @@ const LeftNavbar = () => {
         }
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LeftNavbar
+export default LeftNavbar;
