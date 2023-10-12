@@ -5,7 +5,7 @@ const LeftNavbar = () => {
   let [catagories, setCatagories] = useState([])
   
   useEffect( ()=>{
-    fetch('http://localhost:5000/catagories')
+    fetch('http://localhost:5000/categories')
     .then(res => res.json())
     .then(data => setCatagories(data))
     .catch(err => console.log(err));

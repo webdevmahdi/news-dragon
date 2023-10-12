@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import LeftNavbar from '../../Pages/Shared/Left Navbar/LeftNavbar';
 import RightNavBar from '../../Pages/Shared/Right Navbar/RightNavBar';
+import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
@@ -16,7 +17,9 @@ const Main = () => {
                     <Col>
                         <LeftNavbar></LeftNavbar>
                     </Col>
-                    <Col xs={6}>Main is comming soon...</Col>
+                    <Col xs={6}>
+                        <Outlet></Outlet>
+                    </Col>
                     <Col>
                         <RightNavBar></RightNavBar>
                     </Col>
