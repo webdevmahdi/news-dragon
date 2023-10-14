@@ -8,11 +8,12 @@ let auth = getAuth(app);
 const AuthProvider = ({children}) => {
     let user = { displayName: "Mahdi hasan"}
     let registerUser = (email, password) => {
-        
+        return signInWithEmailAndPassword(auth, email, password);
     }
 
     let authValues = {
         user,
+        registerUser,
     }
     return (
         <AuthContext.Provider value={authValues}>

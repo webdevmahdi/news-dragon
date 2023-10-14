@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { AuthContext } from '../../../provider/AuthProvider'
 
 const Register = () => {
+    let { registerUser } = useContext(AuthContext);
 
     let handleRegister = event => {
         event.preventDefault();
@@ -11,11 +13,12 @@ const Register = () => {
         let name = form.name.value;
         let photo = form.photo.value;
         let password = form.password.value;
-        
+
+        registerUser(email, password);
     }
     return (
             <div>
-                <form className='w-50 mx-auto mt-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded p-5'>
+                <form onSubmit={handleRegister} className='w-50 mx-auto mt-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded p-5'>
                     <h3 className='mb-4 text-center'>Register your account</h3>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
