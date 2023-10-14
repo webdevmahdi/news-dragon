@@ -6,13 +6,13 @@ import bg from '../../../assets/bg.png';
 
 const RightNavBar = () => {
   return (
-    <div>
+    <div className=''>
       <h3>Login with</h3>
-      <Button className='mb-3' variant="outline-primary"> <FaGoogle /> Login with Google</Button>
-      <Button variant="outline-primary"> <FaGithub /> Login with Github</Button>
+      <Button className='mb-3 ms-4 d-block' variant="outline-primary"> <FaGoogle /> Login with Google</Button>
+      <Button className='ms-0' variant="outline-primary"> <FaGithub /> Login with Github</Button>
       <div className='m-4'>
         <h3>Find us on</h3>
-        <ListGroup>
+        <ListGroup className='ms-0'>
           <ListGroup.Item> <FaFacebook /> Facebook</ListGroup.Item>
           <ListGroup.Item> <FaTwitter /> Twitter</ListGroup.Item>
           <ListGroup.Item><FaInstagram /> Instagram</ListGroup.Item>

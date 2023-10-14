@@ -3,7 +3,7 @@ import logo from '../../../assets/logo.png';
 import moment from 'moment';
 import Marquee from "react-fast-marquee";
 import Button from 'react-bootstrap/Button';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 const Header = () => {
   return (
@@ -18,22 +18,6 @@ const Header = () => {
             I can be a React component, multiple React components, or just some text.I can be a React component, multiple React components, or just some text.I can be a React component, multiple React components, or just some text.I can be a React component, multiple React components, or just some text.
           </Marquee>
         </div>
-        
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-      <Container>
-          <Nav className="me-auto mx-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#career">Career</Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets">Profile</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-            <Button variant="secondary">Login</Button>
-            </Nav.Link>
-          </Nav>
-      </Container>
-    </Navbar>
       </div>
     </Container>
   );

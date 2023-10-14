@@ -7,20 +7,22 @@ import Col from 'react-bootstrap/Col';
 import LeftNavbar from '../../Pages/Shared/Left Navbar/LeftNavbar';
 import RightNavBar from '../../Pages/Shared/Right Navbar/RightNavBar';
 import { Outlet } from 'react-router-dom';
+import NavigationBar from '../../Pages/Shared/NavigationBar/NavigationBar';
 
 const Main = () => {
     return (
         <div className='text-center'>
             <Header></Header>
+            <NavigationBar></NavigationBar>
             <Container>
                 <Row>
-                    <Col>
+                    <Col xs={3}>
                         <LeftNavbar></LeftNavbar>
                     </Col>
                     <Col xs={6}>
                         <Outlet></Outlet>
                     </Col>
-                    <Col>
+                    <Col xs={3}>
                         <RightNavBar></RightNavBar>
                     </Col>
                 </Row>
