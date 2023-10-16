@@ -6,7 +6,7 @@ import NewsFooter from '../Shared/News/NewsFooter';
 
 const News = () => {
   const news = useLoaderData();
-  let { category_id, title, image_url, details, author, rating, total_view } = news;
+  let { category_id, title, image_url, details } = news;
 
   return (
     <div>

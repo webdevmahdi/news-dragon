@@ -7,6 +7,7 @@ import News from '../Pages/News/News';
 import LoginLayout from '../Layout/LoginLayout/LoginLayout';
 import Login from '../Pages/Login/Login/Login';
 import Register from '../Pages/Login/Register/Register';
+import ProtectedRoute from './ProtectedRoute';
 
 let router = createBrowserRouter([
     {
@@ -44,7 +45,7 @@ let router = createBrowserRouter([
         children: [
             {
                 path: ':id',
-                element: <News></News>,
+                element: <ProtectedRoute> <News></News> </ProtectedRoute>,
                 loader: ({params}) => fetch(`http://localhost:5000/news/${params.id}`)
             }
         ]
